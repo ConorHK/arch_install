@@ -53,11 +53,11 @@ sed -i "s+LABEL=swap+/dev/mapper/swap" /mnt/etc/fstab
 
 systemd-nspawn -bD /mnt
 
-echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+echo "en_IE.UTF-8 UTF-8" >> /etc/locale.gen
 
 locale-gen
 
-localectl set-locale LANG=en_US.UTF-8
+localectl set-locale LANG=en_IE.UTF-8
 
 timedatectl set-ntp 1
 
